@@ -9,7 +9,7 @@ With EnvBasedEndpoints, you can enable or disable specific endpoints or controll
 At the beginning add below code in your `program.cs`:
 
 ```cs
-using No1.EnvBasedApi;	// import this
+using No1.EnvBasedEndpoints;	// import this
 //...
 var builder = WebApplication.CreateBuilder(args);
 var environment = builder.Environment;	// get application's running environment

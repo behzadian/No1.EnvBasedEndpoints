@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
 
-namespace No1.EnvBasedApi;
+namespace No1.EnvBasedEndpoints;
 
 public class EnvironmentControllerFeatureProvider(IWebHostEnvironment environment) : ControllerFeatureProvider
 {
