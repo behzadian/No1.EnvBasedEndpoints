@@ -7,12 +7,12 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageOutputPath>$(NUGET_HOME)</PackageOutputPath>
 		<IsPackable>true</IsPackable>
-		<AssemblyName>No1.EnvBasedApi</AssemblyName>
-		<RootNamespace>No1.EnvBasedApi</RootNamespace>
-		<PackageId>No1.EnvBasedApi</PackageId>
+		<AssemblyName>No1.EnvBasedEndpoints</AssemblyName>
+		<RootNamespace>No1.EnvBasedEndpoints</RootNamespace>
+		<PackageId>No1.EnvBasedEndpoints</PackageId>
 		<Authors>Hank Ben</Authors>
 		<Company>No1</Company>
-		<Product>No1.EnvBasedApi</Product>
+		<Product>No1.EnvBasedEndpoints</Product>
 		<Version>1.0.0.0</Version>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 	</PropertyGroup>
