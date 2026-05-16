@@ -15,6 +15,7 @@
 		<Product>No1.EnvBasedEndpoints</Product>
 		<Version>1.0.0.0</Version>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 	<PropertyGroup>
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
@@ -24,6 +25,7 @@
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 	</PropertyGroup>
 	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2">
 			<TreatAsUsed>true</TreatAsUsed>
 		</PackageReference>

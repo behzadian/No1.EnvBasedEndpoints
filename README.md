@@ -55,6 +55,16 @@ Controllers and endpoints that have this attribute, will be available only in De
 
 This attribute takes two lists. First list of included environments and second, list of excluded environments. Applied controller or endpoint, will be available only if the application is being run under any included envs (if there was any) and none of excluded envs (if there was any)
 
+```cs
+[Route("LocalOnly/Test")]
+[ApiController]
+[Environment([], ["Production"])] // Controller will not published on production
+public class TestController : ControllerBase
+{
+	[HttpGet]
+	public void ThrowException() => throw new Exception("Exception Message");
+}
+```
 
 
 ### Building.
