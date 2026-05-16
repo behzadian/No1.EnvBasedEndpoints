@@ -2,14 +2,16 @@
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.Extensions.Hosting;
-using No1.EnvBasedApi;
 using System.Reflection;
 
-namespace No1.FaraBank.Api.LocalOnly;
+namespace No1.EnvBasedApi;
 
 public class EnvironmentControllerFeatureProvider(IWebHostEnvironment environment) : ControllerFeatureProvider
 {
-	internal static void Register(ApplicationPartManager manager, IWebHostEnvironment environment) {
+	public static void Register(ApplicationPartManager manager, IWebHostEnvironment environment) {
+		ArgumentNullException.ThrowIfNull(manager);
+		ArgumentNullException.ThrowIfNull(environment);
+
 		manager.FeatureProviders.Clear();
 		manager.FeatureProviders.Add(
 			new EnvironmentControllerFeatureProvider(environment)
